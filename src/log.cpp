@@ -151,6 +151,7 @@ void Log::write_log(int level, const char *format, ...) {
         log_str[n + m] = '\n';
         log_str[n + m + 1] = '\0';
         fputs(log_str, m_fp);
+        fputs(log_str, stdout);   // 同时打印到终端
     }
     m_mutex.unlock();
     va_end(valst);

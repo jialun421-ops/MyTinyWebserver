@@ -1,12 +1,27 @@
+# 编译产物
 build/
+
+# 目标文件和库
 *.o
 *.a
 *.so
+
+# 可执行文件
 server
+test/test_locker
+test/test_threadpool
+test/test_http
+test/test_timer
+test/test_block_queue
+test/test_log
+
+# 日志文件
 log/*.log
+log/*_ServerLog*
+log/*ServerLog*
+
+# IDE 和系统文件
 .vscode/
 .idea/
 *.swp
 .DS_Store
-test/test_locker
-test/test_threadpool
