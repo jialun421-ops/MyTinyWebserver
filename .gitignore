@@ -1,0 +1,12 @@
+build/
+*.o
+*.a
+*.so
+server
+log/*.log
+.vscode/
+.idea/
+*.swp
+.DS_Store
+test/test_locker
+test/test_threadpool

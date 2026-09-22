@@ -1,0 +1,19 @@
+cd ~/projects/TinyWebServer
+mkdir -p root
+cat > root/index.html <<'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>TinyWebServer</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 100px; }
+        h1 { color: #2c3e50; }
+    </style>
+</head>
+<body>
+    <h1>Hello, TinyWebServer!</h1>
+    <p>If you see this page, the server is working.</p>
+</body>
+</html>
+EOF
